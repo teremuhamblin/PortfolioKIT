@@ -25,8 +25,8 @@ Ce portfolio est construit avec *Next.js* et *une bibliothèque appelée Nextra*
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/nextjs-portfolio-starter&project-name=portfolio&repository-name=portfolio)
 
-##$ Comment l’utiliser
-- Exécutez create-next-app avec npm ou Yarn pour initialiser l’exemple :
+### Comment l’utiliser
+- **Exécutez create-next-app avec npm ou Yarn** pour initialiser l’exemple :
 ```bash
 npx create-next-app --example blog my-blog
 ```
@@ -37,4 +37,4 @@ ou
 yarn create next-app --example blog my-blog
 ```
 
-Déployez-le dans le cloud avec Vercel (Documentation).
+**Déployez-le dans le cloud avec Vercel** (Documentation).
