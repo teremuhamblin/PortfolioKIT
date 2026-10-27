@@ -6,7 +6,7 @@ Ci‑dessous, je te propose la roadmap exacte, les fichiers à ajouter, les amé
 
 ---
 
-### 🧩 1. Objectif de la v1.0
+### 🧩 Objectif de la v1.0
 - — Version Stable & Déployable
 - La v1.0 doit être :
 ```text
@@ -29,19 +29,17 @@ Ci‑dessous, je te propose la roadmap exacte, les fichiers à ajouter, les amé
 
 ---
 
-### 🗂️ 2. Structure logique
-- 📁 Arborescence recommandée
+### 🗂️ Structure logique
+- 📁 Arborescence initiale v1.0
 ```text
 PortfolioKIT/
-├── pages/
-│   ├── index.mdx
-│   ├── about.mdx
-│   ├── projects.mdx
-│   ├── blog/
-│   │   ├── first-post.mdx
-│   │   └── second-post.mdx
-│   └── _document.js
-│
+├── pages/ # voir la mise à jour
+│   
+├── docs
+│   ├── ROADMAP.md 
+│   ├── structure.md 
+│   └──. gitkeep
+│ 
 ├── public/
 │   ├── avatar.png
 │   ├── banner.png
@@ -68,37 +66,84 @@ PortfolioKIT/
 
 ---
 
-### 🚀 3. Contenu obligatoire v1.0
+### 🚀 Contenu obligatoire v1.0
 #### 🔧 A. Pages essentielles
+```text
 - index.mdx → Présentation + sections
 - about.mdx → Bio + compétences
 - projects.mdx → Liste de projets
 - blog/*.mdx → 2 articles minimum
-- document.js → Meta tags SEO
+- _document.js → Meta tags SEO
+```
 
-#### 🎨 B. Thème Nextra configuré
-Dans theme.config.js :
+#### 🔧 B. Réorganisation des pages
+Structure recommandée :
+```
+pages/
+├── index.mdx
+├── about.mdx
+├── projects.mdx
+├── skills.mdx
+├── contact.mdx
+└── blog/
+    ├── post-1.mdx
+    └── post-2.mdx
+```
+
+---
+
+### 🧭 C. Ajout d’une vraie navigation
+Ton portfolio doit avoir :
+```text
+- Home
+- About
+- Projects
+- Skills
+- Blog
+- Contact
+```
+
+---
+
+### 📰 D. RSS Feed amélioré
+Ton script gen-rss.js peut être amélioré :
+```text
+- ajout de la date
+- ajout de la description
+- ajout des tags
+- ajout de l’image de couverture
+```
+
+---
+
+### 📄 E. Améliorations documentation
+>> *Priorité haute*
+
+#### 🎨 F. Thème Nextra configuré
+Dans *theme.config.js* :
+```text
 - Nom
 - Description
 - Liens sociaux
 - Footer
 - Couleurs
 - Mode sombre activé
+```
 
-#### 📰 C. RSS Feed fonctionnel
-Dans scripts/gen-rss.js :
+#### 📰 G. RSS Feed fonctionnel
+Dans *scripts/gen-rss.js* :
 - Nom du site
 - URL du site
 - Génération automatique des posts
 
-#### 🔍 D. SEO complet
-Dans pages/_document.js :
+#### 🔍 H. SEO complet
+Dans *pages/_document.js* :
 - <meta name="description">
 - <meta property="og:image">
 - <meta property="og:title">
 - <meta name="twitter:card">
 
-#### 🛡️ E. Workflows GitHub
+#### 🛡️ I. Workflows GitHub
 Dans .github/workflows/build.yml :
 - Lint
 - Build
