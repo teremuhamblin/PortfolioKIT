@@ -1,0 +1,84 @@
+name: 🔧 Pull Request
+description: Soumettre une modification, une amélioration ou un correctif
+title: "[PR] Titre clair et descriptif"
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci pour votre contribution !
+        Assurez-vous que votre PR respecte les directives du projet.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Résumé de la modification
+      description: Décrivez brièvement ce que votre PR apporte.
+      placeholder: "Cette PR ajoute / corrige..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Pourquoi cette modification est-elle nécessaire ?
+      placeholder: "Cette fonctionnalité permet de..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: Détails des changements
+      description: Listez les modifications principales.
+      placeholder: |
+        - Ajout de...
+        - Correction de...
+        - Mise à jour de...
+    validations:
+      required: true
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: Tests effectués
+      description: Décrivez les tests réalisés pour valider votre PR.
+      placeholder: |
+        - Test unitaire sur...
+        - Vérification manuelle de...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: breaking
+    attributes:
+      label: Cette PR introduit-elle un changement majeur (breaking change) ?
+      options:
+        - "Oui"
+        - "Non"
+    validations:
+      required: true
+
+  - type: textarea
+    id: breaking_details
+    attributes:
+      label: Si oui, détaillez le changement majeur
+      description: Expliquez l’impact et les migrations nécessaires.
+    validations:
+      required: false
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Issues liées
+      description: Référencez les issues concernées (ex: #12).
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informations supplémentaires
+      description: Ajoutez tout détail utile.
