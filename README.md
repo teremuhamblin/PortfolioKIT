@@ -1,3 +1,4 @@
+###### README.md >> markdown 
 # PortfolioKIT
 
 > Un template de portfolio moderne, rapide et orienté contenu, propulsé par [Next.js](https://nextjs.org/) et [Nextra](https://nextra.site/).
@@ -9,12 +10,13 @@
 ---
 
 ## ✨ Fonctionnalités
-
+```text
 - **Rédaction en Markdown / MDX :** Concentrez-vous uniquement sur le contenu de vos articles et de vos pages.
 - **Flux RSS automatique :** Génération dynamique d'un flux RSS basé sur vos publications.
 - **Design soigné :** Intégration d'un thème élégant et responsive par défaut.
 - **Gestion des tags :** Organisation simple et rapide de vos articles par catégories.
 - **Performance :** Chargement rapide et optimisé des polices web.
+```
 
 ---
 
