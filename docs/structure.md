@@ -1,7 +1,7 @@
 ###### structure.md >> markdown
 # PortfolioKIT
 ### 🎯 Takeaway
-La v1.0 de PortfolioKIT doit être une version stable, présentable, déployable, avec une structure claire, une documentation complète, et les premiers workflows GitHub.  
+**La v1.0 de PortfolioKIT** est *une version stable, présentable, déployable, avec une structure claire, une documentation complète, et les premiers workflows GitHub*.  
 Ci‑dessous, je te propose la roadmap exacte, les fichiers à ajouter, les améliorations, et la structure finale du dépôt.
 
 ---
@@ -38,7 +38,7 @@ PortfolioKIT/
 ├── docs
 │   ├── ROADMAP.md 
 │   ├── structure.md 
-│   └──. gitkeep
+│   └── .gitkeep
 │ 
 ├── public/
 │   ├── avatar.png
@@ -54,10 +54,11 @@ PortfolioKIT/
 ├── theme.config.js
 ├── next.config.js
 ├── package.json
+├── .gitignore 
 ├── README.md
 └── .github/
     ├── workflows/
-    │   └── build.yml
+    │   └── .gitkeep
     ├── ISSUE_TEMPLATE/
     │   ├── bug_report.yml
     │   └── feature_request.yml

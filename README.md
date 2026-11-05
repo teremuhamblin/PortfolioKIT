@@ -1,40 +1,58 @@
+###### README.md >> markdown 
 # PortfolioKIT
 
-Ce portfolio est construit avec *Next.js* et *une bibliothèque appelée Nextra*.
-- Elle vous permet d’écrire en *Markdown* et de vous concentrer sur le contenu de votre portfolio.
+> Un template de portfolio moderne, rapide et orienté contenu, propulsé par [Next.js](https://nextjs.org/) et [Nextra](https://nextra.site/).
 
-### Ce starter inclut 
+[![Next.js](https://img.shields.io/badge/Built%20with-Next.js-grey?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![Nextra](https://img.shields.io/badge/Powered%20by-Nextra-grey?style=flat-square)](https://nextra.site/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-grey.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+## ✨ Fonctionnalités
 ```text
-- Configuration automatique pour gérer Markdown/MDX  
-- Génère un flux RSS basé sur vos articles  
-- Un thème magnifique inclus par défaut  
-- Catégorisation facile des articles avec des tags  
-- Chargement rapide et optimisé des polices web  
+- **Rédaction en Markdown / MDX :** Concentrez-vous uniquement sur le contenu de vos articles et de vos pages.
+- **Flux RSS automatique :** Génération dynamique d'un flux RSS basé sur vos publications.
+- **Design soigné :** Intégration d'un thème élégant et responsive par défaut.
+- **Gestion des tags :** Organisation simple et rapide de vos articles par catégories.
+- **Performance :** Chargement rapide et optimisé des polices web.
 ```
 
-### Configuration
-```text
-1. Mettez à jour votre nom dans theme.config.js ou modifiez le footer.  
-1. Mettez à jour votre nom et l’URL du site pour le flux RSS dans scripts/gen-rss.js.  
-1. Mettez à jour les meta tags dans pages/_document.js.  
-1. Mettez à jour les articles dans pages/posts/*.md avec votre propre contenu.  
-```
+---
 
-### Déployez votre propre version
-- Déployez l’exemple en utilisant *Vercel* :
+## 🚀 Démarrage rapide
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/nextjs-portfolio-starter&project-name=portfolio&repository-name=portfolio)
-
-### Comment l’utiliser
-- **Exécutez create-next-app avec npm ou Yarn** pour initialiser l’exemple :
+### 1. Cloner le dépôt
 ```bash
-npx create-next-app --example blog my-blog
+git clone [https://github.com/teremuhamblin/PortfolioKIT.git](https://github.com/teremuhamblin/PortfolioKIT.git)
+cd PortfolioKIT
 ```
 
+### 2. Installer les dependances
+- 》》 npm install
 ou
+- 》》 yarn install
 
+### 3. Lancer le serveur de développement
+- 》》 npm run dev
+ou
+- 》》 yarn dev
+
+》》 **Ouvrez http://localhost:3000 dans votre navigateur pour voir le résultat**.
+
+### ​⚙️ Configuration personnalisée
+​Pour adapter ce portfolio à votre profil, effectuez les modifications suivantes :
 ```text
-yarn create next-app --example blog my-blog
+- ​Nom et pied de page : Mettez à jour vos informations dans theme.config.js.
+- ​Flux RSS : Modifiez votre nom et l'URL de votre site dans scripts/gen-rss.js.
+- ​SEO et Meta tags : Mettez à jour les balises meta dans pages/_document.js.
+- ​Contenu : Remplacez ou ajoutez vos propres articles dans le dossier pages/posts/*.md.
 ```
 
-**Déployez-le dans le cloud avec Vercel** (Documentation).
+### ​📦 Déploiement
+》》 *​Le moyen le plus simple de déployer votre portfolio est d'utiliser* **Vercel**.
+
+
+### ​📄 Licence
+​Ce projet est sous **licence MIT**.
+- *Voir le fichier LICENSE pour plus de détails*.
